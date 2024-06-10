@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include the Tailwind CSS CDN link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="flex items-center justify-between m-5">
+      <div>
+        <img
+          src="https://www.redtape.com/cdn/shop/files/logo.png?v=1704870276&width=270"
+          alt=""
+        />
+      </div>
+      <div
+        style="margin-left: 900px"
+        class="flex items-center justify-between ml-[00px]"
+      >
+        <div class="h-px w-52 bg-gray-900 flex items-center justify-center">
+          <img
+            style="margin-left: 190px"
+            class="ml-[190px]"
+            src="../../../../../search.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="h-10 w-24 border border-gray-400 flex items-center justify-center gap-1.5"
+      >
+        <img
+          style="height: 30px; width: 30px"
+          src="data:image/png;base64,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"
+          alt=""
+        />
+        <span>India</span>
+        <img src="../../../../../care.svg" alt="" />
+      </div>
+    </div>
+    <nav class="bg-gray-10 py-4">
+      <div class="flex justify-between items-center m-9">
+        <div class="flex items-center gap-10">
+          <span>Man</span>
+          <span>Women</span>
+          <span>Kids</span>
+          <span> Accessories</span>
+          <span> Gifting</span>
+          <span>Soda Water X RedTape</span>
+        </div>
+        <!-- <div class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-white hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">About</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">Services</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div> -->
+        <div class="flex items-center">
+          <!-- Replace "your-image-path.jpg" with the path to your image -->
+          <img
+            src="../../../../../pe.svg"
+            alt="Your Image"
+            class="h-8 w-8 rounded-full"
+          />
+          <span>Login</span>
+          <img
+            src="../../../../../cart.svg"
+            alt="Your Image"
+            class="h-8 w-8 rounded-full"
+          />
+          <span>Cart</span>
+          <img
+            src="../../../../../heart (3).svg"
+            alt="Your Image"
+            class="h-8 w-8 rounded-full"
+          />
+          <span>Whilsite</span>
+        </div>
+      </div>
+    </nav>
+    <div class="h-1 w-full bg-gray-300"></div>
+    <div class="inline-block ml-10">
+      <h1 class="text-4xl font-medium text-gray-500">Register Account</h1>
+      <p class="text-xl font-normal text-gray-600">
+        If you already have an account with us, please login at the login page.
+      </p>
+      <h2 class="text-3xl font-normal text-gray-800">Your Personal Details</h2>
+      <div  style="height: 1px;width: 240%; background-color: rgb(168, 161, 161); margin-top: 20px;" class=" "></div>
+    </div>
+    <div   style="margin: 50px;" class="flex items-center justify-between ml-10 my-10">
+      <div class="flex items-center gap-5">
+        <label class="text-red-500">*</label>
+        <label class="text-xl font-normal text-gray-400">First Name</label>
+        <input
+          class="h-10 w-72 rounded-md border border-gray-400 ml-10"
+          type="text"
+          id="first-name"
+          placeholder="First Name"
+        />
+      </div>
+      <div class="flex items-center gap-5">
+        <label class="text-red-500">*</label>
+        <label class="text-xl font-normal text-gray-400">Last Name</label>
+        <input
+          class="h-10 w-72 rounded-md border border-gray-400 ml-10"
+          type="text"
+          id="last-name"
+          placeholder="Last Name"
+        />
+      </div>
+    </div>
+    <div  style="margin: 50px;"  class="flex items-center justify-between ml-10 my-10">
+      <div class="flex items-center gap-5">
+        <label class="text-red-500">*</label>
+        <label class="text-xl font-normal text-gray-400">Email</label>
+        <input
+          class="h-10 w-72 rounded-md border border-gray-400 ml-10"
+          type="text"
+          id="email"
+          placeholder="Email"
+        />
+      </div>
+      <div class="flex items-center gap-5">
+        <label class="text-red-500">*</label>
+        <label class="text-xl font-normal text-gray-400">Telephone</label>
+        <input
+          class="h-10 w-72 rounded-md border border-gray-400 ml-10"
+          type="text"
+          id="telephone"
+          placeholder="Telephone"
+        />
+      </div>
+    </div>
+    <div class="ml-10">
+      <h2 class="text-3xl font-normal text-gray-800">Your Personal Details</h2>
+      <div    style="height: 1px;width: 100%;margin: 20px;" class="h-1 w-full bg-gray-300"></div>
+      <div style="margin: 50px;"  class="flex items-center justify-between ml-10 my-10">
+        <div  style="margin: 30px;" class="flex items-center gap-5 m-5">
+          <label class="text-red-500">*</label>
+          <label class="text-xl font-normal text-gray-400">Password</label>
+          <input
+            class="h-10 w-72 rounded-md border border-gray-400 ml-10"
+            type="text"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div class="flex items-center gap-5">
+          <label class="text-red-500">*</label>
+          <label class="text-xl font-normal text-gray-400">Confirm Password</label>
+          <input
+            class="h-10 w-72 rounded-md border border-gray-400 ml-10"
+            type="text"
+            id="confirm-password"
+            placeholder="Confirm Password"
+          />
+        </div>
+      </div>
+    </div>
+    
+<div style="margin-left: 40px;">
+    <h2 style="font-size: 30px; font-weight: 400; color: rgb(43, 41, 41)">
+      Newsletter 
+    </h2>
+  
+    <div
+      style="height: 1px; width: 230%; background-color: rgb(208, 205, 205)"
+    ></div>
+    </div>
+    <div class="flex items-center ml-10 mt-10 gap-5">
+        <label>Subscribes</label>
+        <label>Yes</label>
+        <input type="radio" id="yes" name="choice" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="choice" value="no">
+        <label for="no">No</label>
+      </div>
+      
+    <div class="flex items-center gap-5 justify-end m-5">
+        <p>I have read and agree to the Privacy Policy</p>
+        <input type="checkbox" id="agree" />
+        <div class="h-10 w-24 bg-black rounded-md flex items-center justify-center">
+          <p class="text-white">Create</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center gap-1">
+        <img style="height: 40px;width: 40px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEVIWpb///9DVpT5+vtca59SY5vIzNxBVJN/ibEySI2wtc1FWJW5vtLt7vN1gKs8UJEsRItYZ51odaWaosAbOoeHkLVvfKmNlrnY2ubn6fDg4uticKI2TI+gp8TCx9mlrMclP4mkIkMbAAADdklEQVR4nO3ca3OiMBTG8RjkGjDBGxcR/f6fctvO7uy0XTZAPZ4HPP9XfeNMfpNChCBqc0jVKkoPGxUcuUfxqI6B6h33IB6V69XJcg/iUdmT2mruQTwqvVXKcA/iUZkVWVZFkSRJkiRJkiRJAsis4DJLx7ZLnXPpe+6jtz+6zlqrF3Wnwljn1Lm6Zn0f/anv8zy7XQ9VstuXsbu7mHuUYzLdUVV53TZFEGw+F7xVFEXTtG0d7fHnJz6qQ1t8VfyrBB1j3b4eA8HHGB0n7UgJOiZW53o8BRpj7CWbQkHGaH1qpllwMTa8jT3u4TG2zCdbUDFxGE2moGK0mmPBxJiun2PBxKS3WRZITLebZ0HExGqmBRBjulkHPyYmraYvMKgYoyZ8TUbHuGz2xMBhdDnpSz82Jr3Onxg0jJn3PQYTY0/FajDGTry2RMboyw8OfzSMTX7yX7ZJoG5p2sNPLFgzY8J8/Mg/bst+boc0M2MPmaDOqlOS7L4WIm11xOcxh0xxuJQqttbGX0OyvB3/IyxZrLFGPZCu/JakW4LkPf+SuZgnk03ovSnTL+apUR36TmZBspSJUab0XWRGJdKy+N/01ndmvi1mYvyYoOq4xzg6vfVcZTa7Jc2MB9Pukb58/T8vpr6sCBNtl7LKjMGEizkzj8GsamYEw5JgUHs1jJyaWRIMaoJBTTCoyTqDmmCYM9/2VX5nSx9Gfd+T+ZtmkJp9MpTveab6NPjR98rna8yEfctpMdxVJ8M0DPuzZJia4bdAZBiOW4RkmJxhV40Mc2PYuiXDXBk2b6gwQcWweUOFaTg2b6kw7Zlh84YKw7ITRYWJOJ53oMLkHDvRVJiM462SRJjgtqKZKTiWGSoMyzJDheF54IEIU7Pc7CDCRCzPCBFh+vt6MAHLMkOFOazo36zgeayWBtNwXACQYRhuZ5JhWp6Xl9Ng6vuKMExvL6fB3HiWGVXl2UC+d4C0Qx/MMq4fNdl0IKc8mD52Q5+Fe6x2iduAg70aRp4DYEkwqAkGNcGgJusMaoJBTTCoCQY1WWdQEwxqgkHt1TByamZJMKgJBjXBoCbrDGqCQU0wqAkGtVfDyKLJkmBQEwxqgkFN1hnUBIOaYFATDGqyzqAmGNQEg5pgUKNfZ574ahrimYkv6onv2SDG2Eo98decxBjXq+D+qLF6I8bcg1+FgEsUvwFpSQAAAABJRU5ErkJggg==" alt="">
+        <img style="height: 40px;width: 40px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKH5neAwysL2q3cpZXERUgE1FuBXx80icx2w&usqp=CAU" alt="">
+      </div>
+      <div style="height: 1px;width: 100%;background-color: rgb(212, 206, 206); margin: 40px;"></div>
+      <footer  style="margin: 40px;" class="flex justify-between p-5 ">
+        <div class="w-1/4">
+          <h3 style="color: gray; font-size: 20px;font-weight: 400;margin-top: 10px;">What's in Store</h3>
+          <p>Men</p>
+          <p>Women</p>
+          <p>Kida</p>
+          <p>Giffting</p>
+        </div>
+        <div class="w-1/4">
+          <h3  style="color: gray; font-size: 20px;font-weight: 400;margin-top: 10px;">About Company </h3>
+          <p>About is</p>
+          <p>News</p>
+          <p>Carrers</p>
+          <p>Subsatinly</p>
+        </div>
+        <div class="w-1/4">
+            <h3  style="color: gray; font-size: 20px;font-weight: 400;margin-top: 10px;">Customer info</h3>
+            <p>Contact is</p>
+            <p>facebook</p>
+            <p>My account</p>
+            <p>Store ther </p>
+            <p>Faq us</p>
+        </div>
+        <div class="w-1/4">
+            <h3  style="color: gray; font-size: 20px;font-weight: 400;margin-top: 10px;">Policies</h3>
+          <p>Return & Replacing</p>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+          
+        </div>
+        <div class="flex justify-center mt-5 w-full gap-4">
+          <img   style="height: 60px;width: 60px;" src="https://www.redtape.com/cdn/shop/files/rt.jpg?v=1707332114" alt="Image 1">
+          <img  style="height: 60px;width: 60px;" src="https://www.redtape.com/cdn/shop/files/mb_2b859227-cde7-4265-9bb6-61e5ab54929d_100x.png?v=1707332108" alt="Image 2">
+          <img  style="height: 60px;width: 60px;" src="https://www.redtape.com/cdn/shop/files/bsb_100x.png?v=1707332118" alt="Image 3">
+        </div>
+      </footer>
+      
+      <div class="flex justify-center mt-5 w-full gap-4">
+<h1 style="text-align: center;color: rgb(194, 192, 192); margin-top: 20px;">We Accept</h1>
+        <img  style="height: 60px;width: 60px;" src="https://www.redtape.com/cdn/shop/files/cards_e268f93f-d692-4597-a825-6aa6f6cb60ca.png?v=1705553886" alt="">
+        <!-- <img  style="height: 60px;width: 60px;" src="https://www.redtape.com/cdn/shop/files/cards_e268f93f-d692-4597-a825-6aa6f6cb60ca.png?v=1705553886" alt=""> -->
+      </div>
+   
+  </body>
+</html>
